@@ -1,0 +1,32 @@
+<div class="row">
+<div class="col-md-12">
+ <h2>Student List</h2>
+
+<p>
+<table>
+    <tr>
+    <th>Student Id</th>
+    <th>Name</th>
+    <th>Program</th>
+    <th>GPA</th>
+    </tr>
+    {{#each students}}
+    <tr>
+        <td>{{StudID}}</td>
+        <td>{{name}}</td>
+        <td>{{program}}</td>
+        <td>{{gpa}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+</p>
+<h3>Student Honour Pledge:</h3>
+<p>I acknowledge Seneca Clooege's academic integrity policy.
+    On my honor, I have neither given or received unauthorized aid on this test.
+</br>
+    Name: Hugh Kim</br>
+    Student Number: 141050211</br>
+</p>
+</div>
+</div>

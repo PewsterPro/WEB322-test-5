@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add student</title>
+    <style>
+        h {
+            display: flex; 
+            font-size: 30px;
+             justify-content:center;
+         }
+         div.relative {
+            position: center;
+            border: 1px solid black;
+            
+            width: 300px;
+         }
+     </style>
+</head>
+<body>
+    <h><b>Add Student</b></h>
+    <form method="post" action="/addStudent">
+    <div class= "relative">
+        <p class="Name">
+            
+                <label for="last_name">Student Name:</label>
+                <input class="form-control" id="name" name="name" type="text"/>
+           
+        </p>
+        <p class="Option">
+                Program: 
+                <select class="form-control" name="program" id="program" type="string" >
+                    <option value="BSD">BSD</option>
+                    <option value="CPA">CPA</option>
+                    <option value="DSA">DSA</option>
+                </select>
+           
+        </p>
+        <p class="GPA">
+                <label for="firstName">GPA:</label>
+                <input class="form-control" id="gpa" name="gpa" type="float" />
+        </p>
+        <input type="submit" class="btn btn-primary pull-right" value="Add Studnet"/>
+        <input type="submit" class="btn btn-primary pull-right" value="Reset"/>
+    </div>
+    <h3>Student Honour Pledge:</h3>
+<p>I acknowledge Seneca Clooege's academic integrity policy.
+    On my honor, I have neither given or received unauthorized aid on this test.
+</br>
+    Name: Hugh Kim</br>
+    Student Number: 141050211</br>
+</p>
+</form>
+</body>
+</html>
